@@ -40,10 +40,16 @@
       v-if="isShowExam"
     >
       <div class="flex flex-col justify-center h-full w-full">
-        <div class="py-3">
-          <p class="text-lg text-center text-white mt-2">
+        <div class="flex justify-between items-center gap-2 py-3 px-2">
+          <p class="text-lg text-white mt-2">
             Time remaining: {{ formattedTime }}
           </p>
+          <button
+            class="border border-white px-2 py-2 text-white rounded-sm hover:bg-white hover:text-black"
+            @click="timeUp"
+          >
+            Done Exam
+          </button>
         </div>
         <iframe
           :src="pdfUrl + '#toolbar=0'"
@@ -90,7 +96,6 @@ export default {
   },
   methods: {
     toggleExam() {
-
       if (this.isButtonDisable && this.code.toLowerCase() === "") {
         this.info = "No code provided, Please enter code!";
         return;
@@ -119,20 +124,22 @@ export default {
         if (remaining > 0) {
           this.timeLeft = remaining;
         } else {
-          this.timeLeft = 0;
           clearInterval(this.timer);
           this.timeUp();
         }
       }, 1000);
     },
     timeUp() {
+      this.timeLeft = 0;
       clearInterval(this.timer);
       this.isShowExam = false;
       this.isButtonDisable = true;
+
       localStorage.setItem(
         "examInfo",
         "Please enter the code and click “Start Exam.”",
       );
+
       this.info = "Please enter the code and click “Start Exam.”";
       localStorage.setItem("examDone", "true");
     },
