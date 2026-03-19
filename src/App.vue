@@ -65,7 +65,7 @@
 export default {
   data() {
     return {
-      pdfUrl: "/file/IM-Midterm.pdf",
+      pdfUrl: "/file/IM-Sample.pdf",
       isShowExam: false,
       timeLeft: 0,
       timer: null,
@@ -101,7 +101,7 @@ export default {
         return;
       }
 
-      if (this.isButtonDisable && this.code.toLowerCase() !== "cc104") {
+      if (this.isButtonDisable && this.code.toLowerCase() !== "cc104x") {
         this.info = "Code is invalid";
         return;
       }
