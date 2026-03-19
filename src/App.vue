@@ -104,7 +104,7 @@ export default {
       this.isShowExam = true;
       this.code = "";
 
-      const endTime = Date.now() + 20 * 1000; // 1 hour 3600
+      const endTime = Date.now() + 3600 * 1000; // 1 hour 3600
       localStorage.setItem("examInfo", "Click “Start” to begin the exam!");
       localStorage.setItem("examEndTime", endTime);
       localStorage.setItem("examDone", "false");
