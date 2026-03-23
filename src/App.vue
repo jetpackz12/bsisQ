@@ -21,7 +21,7 @@
         <template v-else>
           <input
             class="border border-white w-3/5 p-2 rounded-sm text-black focus:outline-0"
-            type="text"
+            type="password"
             placeholder="Enter code: "
             v-model.lazy="code"
             @keyup.enter="toggleExam"
@@ -101,7 +101,7 @@ export default {
         return;
       }
 
-      if (this.isButtonDisable && this.code.toLowerCase() !== "cc104x") {
+      if (this.isButtonDisable && this.code.toLowerCase() !== "cc104x2") {
         this.info = "Code is invalid";
         return;
       }
