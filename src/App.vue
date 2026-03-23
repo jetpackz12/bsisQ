@@ -65,7 +65,7 @@
 export default {
   data() {
     return {
-      pdfUrl: "/file/IM-Midterm.pdf", //IM-Midterm.pdf IM-Sample.pdf
+      pdfUrl: "/file/IM-Sample.pdf", //IM-Midterm.pdf IM-Sample.pdf
       isShowExam: false,
       timeLeft: 0,
       timer: null,
