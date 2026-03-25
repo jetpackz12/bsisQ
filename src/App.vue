@@ -101,7 +101,7 @@ export default {
         return;
       }
 
-      if (this.isButtonDisable && this.code.toLowerCase() !== "cc104xx") {
+      if (this.isButtonDisable && this.code.toLowerCase() !== "cc104xx2") {
         this.info = "Code is invalid";
         return;
       }
