@@ -65,7 +65,7 @@
 export default {
   data() {
     return {
-      pdfUrl: "/file/IM-Sample.pdf", //IM-Midterm.pdf IM-Sample.pdf
+      pdfUrl: "/file/IM-Midterm.pdf", //IM-Midterm.pdf IM-Sample.pdf
       isShowExam: false,
       timeLeft: 0,
       timer: null,
@@ -101,7 +101,7 @@ export default {
         return;
       }
 
-      if (this.isButtonDisable && this.code.toLowerCase() !== "cc104xx2") {
+      if (this.isButtonDisable && this.code.toLowerCase() !== "cc104z") {
         this.info = "Code is invalid";
         return;
       }
