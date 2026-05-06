@@ -54,7 +54,7 @@
 export default {
   data() {
     return {
-      pdfUrl: "/file/IM-Sample.pdf", //IM-Final-WAK.pdf IM-Final.pdf IM-Sample.pdf
+      pdfUrl: "/file/IM-Final.pdf", //IM-Final-WAK.pdf IM-Final.pdf IM-Sample.pdf
       isShowExam: false,
       timeLeft: 0,
       timer: null,
