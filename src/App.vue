@@ -380,7 +380,7 @@ function fullReset() {
 }
 
 // ── Exam State ────────────────────────────────────────────────
-const pdfUrl = ref("/file/IM-Sample.pdf");
+const pdfUrl = ref("/file/IM-Midterm.pdf");
 const isShowExam = ref(false);
 const isDisqualified = ref(false);
 const timeLeft = ref(0);
