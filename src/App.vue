@@ -2,7 +2,7 @@
   <main class="h-screen w-screen bg-black overflow-auto">
 
     <!-- Warning Overlay -->
-    <div v-if="warningVisible" class="fixed inset-0 z-50 flex flex-col justify-center items-center bg-black/90">
+    <div v-if="warningVisible" class="fixed inset-0 z-50 flex flex-col justify-center items-center bg-black">
       <div class="border border-red-500 rounded-sm p-8 flex flex-col items-center gap-4 max-w-md text-center">
         <h1 class="text-red-500 text-2xl font-bold">⚠️ Warning!</h1>
         <p class="text-white text-lg">You left the exam tab!</p>
@@ -469,7 +469,7 @@ function blockShortcuts(e) {
   if (!isShowExam.value) return;
   const key = e.key.toLowerCase();
   const blocked =
-    (e.ctrlKey && ["t", "n", "w", "r"].includes(key)) ||
+    (e.ctrlKey && ["t", "n", "w", "r", "c"].includes(key)) ||
     e.key === "F5" ||
     (e.ctrlKey && e.shiftKey && key === "r") ||
     (e.altKey && e.key === "F4");
