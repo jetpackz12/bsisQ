@@ -93,7 +93,7 @@
 import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 
 // ── Constants ────────────────────────────────────────────────
-const EXAM_CODE = "123456x";
+const EXAM_CODE = "654321x";
 const EXAM_DURATION_MS = 3600 * 1000;
 const MAX_STRIKES = 3;
 
